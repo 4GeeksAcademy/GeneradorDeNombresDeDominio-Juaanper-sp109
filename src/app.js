@@ -9,19 +9,19 @@ window.onload = function() {
   //write your code here
 
 
-  let pronoun = ['the', 'our'];
-  let adj = ['great', 'big'];
-  let noun = ['jogger', 'racoon'];
+let pronoun = ['the', 'our'];
+let adj = ['great', 'big'];
+let noun = ['jogger', 'racoon'];
 
-  for (let i = 0; i<pronoun.length; i++){
-    for (let i = 0; i<adj.length; i++){
-      for (let i = 0; i<adj.length; i++){
-        let (dominio) = pronoun [i] + adj [i] + noun[i] + .com
-        console.log (dominio);
-      }
+for (let i = 0; i < pronoun.length; i++) {
+  for (let j = 0; j < adj.length; j++) {
+    for (let k = 0; k < noun.length; k++) {
+      // ✅ Generación del dominio
+      let dominio = `${pronoun[i]}${adj[j]}${noun[k]}.com`;
+      console.log(dominio);
     }
   }
-  console.log (dominio);
+}
 
 
 
